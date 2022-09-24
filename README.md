@@ -44,11 +44,10 @@ Users should be able to:
 - CSS Grid
 
 ### What I learned
-Discovered the Description List and the Deleted Text elements
+Discovered the Deleted Text element
 
 ### Useful resources
 
-- [Description List - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl)
 - [Deleted Text - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del)
 
 ## Author
