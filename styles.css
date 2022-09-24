@@ -57,14 +57,17 @@ del::after {
   padding: 1.2rem;
 }
 
-.background {
-  background: url('./images/image-product-mobile.jpg');
-  background-position: center;
-  background-size: cover;
-  background-size: cover;
+.productImageContainer {
   height: 220px;
   margin: -1.2rem -1.2rem 0;
   width: auto;
+}
+
+.productImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -124,9 +127,7 @@ del::after {
     padding: 0;
   }
   
-  .background {
-    background: url('./images/image-product-desktop.jpg');
-    background-size: cover;
+  .productImageContainer {
     flex: 1 0 50%;
     width: 100%;
     height: auto;
