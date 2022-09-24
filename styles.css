@@ -186,8 +186,9 @@ del::after {
 }
 
 .attribution {
-  text-align: center;
+  display: flex;
   padding: 0rem 0.5rem 0.5rem; 
+  text-align: center;
   font-size: 0.825rem;
 }
 
@@ -196,3 +197,11 @@ del::after {
   transition: color 100ms;
 }
 
+.hidden {
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 0px;
+  overflow: hidden;
+  position: absolute;
+}
