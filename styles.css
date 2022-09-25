@@ -1,6 +1,6 @@
 html {
   background-color: hsl(30, 38%, 92%);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: clamp(0.875rem, calc(0.4rem + 1vw), 1rem);
   height: 100%;
 }
@@ -41,7 +41,7 @@ del::after {
 }
 
 .cardContainer {
-  flex: 1 0 0 ;
+  flex: 1 0 0;
   display: grid;
   padding: 1rem 1rem 0rem;
   place-content: center;
@@ -57,10 +57,19 @@ del::after {
   padding: 1.2rem;
 }
 
-.productImageContainer {
+.productFlexItem {
   height: 220px;
   margin: -1.2rem -1.2rem 0;
   width: auto;
+  position: relative;
+}
+
+.productImageContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 .productImage {
@@ -70,16 +79,13 @@ del::after {
   object-position: center;
 }
 
-
-.mainContent{
+.mainContent {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
 }
-
-
 
 .productCardHeader {
   display: flex;
@@ -97,12 +103,12 @@ del::after {
 
 .productName {
   color: hsl(212, 21%, 14%);
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 2rem;
   line-height: 1.1;
 }
 
-.cardBody{
+.cardBody {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -126,15 +132,30 @@ del::after {
     gap: 0px;
     padding: 0;
   }
-  
+
+  .productFlexItem {
+    flex: 0 0 50%;
+    height: auto;
+    margin: 0px;
+    position: relative;
+  }
+
   .productImageContainer {
-    flex: 1 0 50%;
     width: 100%;
     height: auto;
     margin: 0;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
   }
 
-  .mainContent{
+  .productImage {
+    width: auto;
+  }
+
+  .mainContent {
     box-sizing: border-box;
     display: flex;
     flex: 1 0 50%;
@@ -143,12 +164,12 @@ del::after {
     width: 100%;
   }
 
-  .cardBody{
+  .cardBody {
     gap: 2rem;
     max-width: 55ch;
   }
 
-  .productDescription{
+  .productDescription {
     max-width: 60ch;
   }
 
@@ -159,7 +180,7 @@ del::after {
 
 .currentPrice {
   color: hsl(158, 36%, 37%);
-  font-family: 'Fraunces';
+  font-family: "Fraunces";
   font-size: 2rem;
   text-decoration: none;
 }
@@ -179,7 +200,7 @@ del::after {
   line-height: 3;
   text-align: center;
   text-decoration: none;
-  transition: background-color 150ms; 
+  transition: background-color 150ms;
 }
 
 .CTACartAdd:hover {
@@ -188,7 +209,7 @@ del::after {
 
 .attribution {
   display: flex;
-  padding: 0rem 0.5rem 0.5rem; 
+  padding: 0rem 0.5rem 0.5rem;
   text-align: center;
   font-size: 0.825rem;
 }
