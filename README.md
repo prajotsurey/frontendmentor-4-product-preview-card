@@ -52,6 +52,6 @@ Discovered the Deleted Text element
 
 ## Author
 
-- Website - [Add your name here](https://prajot.dev)
+- Website - [Prajot Surey](https://prajot.dev)
 - Frontend Mentor - [@prajotsurey](https://www.frontendmentor.io/profile/prajotsurey)
 - Twitter - [@prajotsurey0](https://www.twitter.com/prajotsurey0)
